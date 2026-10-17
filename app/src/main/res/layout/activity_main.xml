@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivWarT"
+        android:layout_width="163dp"
+        android:layout_height="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wantander" />
+
+    <ImageView
+        android:id="@+id/ivTelegram"
+        android:layout_width="193dp"
+        android:layout_height="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivWarT"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tglogo" />
+
+    <ImageView
+        android:id="@+id/ivGitHub"
+        android:layout_width="163dp"
+        android:layout_height="182dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivWarT"
+        app:srcCompat="@drawable/gitlogo" />
+
+    <ImageView
+        android:id="@+id/ivModrith"
+        android:layout_width="186dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivGitHub"
+        app:layout_constraintTop_toBottomOf="@+id/ivTelegram"
+        app:srcCompat="@drawable/logomodrinth" />
+
+    <ImageView
+        android:id="@+id/ivTorrent"
+        android:layout_width="163dp"
+        android:layout_height="182dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGitHub"
+        app:srcCompat="@drawable/torentlogo" />
+
+    <ImageView
+        android:id="@+id/ivYouTube"
+        android:layout_width="216dp"
+        android:layout_height="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivTorrent"
+        app:layout_constraintTop_toBottomOf="@+id/ivModrith"
+        app:srcCompat="@drawable/yt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
